@@ -1,0 +1,26 @@
+first install git bash in ur pc,
+then go to that folder which u want to upload them on github
+then click right -->git bush-->git command window will open
+
+1.git config --global user.name Pooja
+2.git config --global user.email poojasain856@gmail.com -->this will config the user 
+
+3.git init -->creates git folder which is ready to initialise project on github repository
+4.git add . -->goes all the files in tha staging area for github repository except gitignore file
+5.git commit -m "Initial Commit" -->commit created-->without commit we cant upload our project, commit is must.
+6.git status -->show working tree is clean or not
+
+please check ur github project branch (main/master)
+7.git branch -M master/main
+
+if error occurs then follow step 8
+if no error ,then contiue to 9 step
+
+
+8.ssh-keygen -t rsa -b 4096 -C "poojasain856@gmail.com"
+tail <path to id_rsa.pub> # Add this key to your Github Account(settings->SSH key(New)->paste over there. 
+9.git remote add origin <ssh url.git>
+10.git push origin master -->project uploaded to Github as repository
+
+
+touch .gitignore -->creates a text file shows what to not upload on github(unneccessary files where mentioned).we can attach them during vscode coding.s.
